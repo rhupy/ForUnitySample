@@ -1,0 +1,677 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE.exe" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_BurstDebugInformation_DoNotShip\Data\Plugins\x86_64\lib_burst_generated.txt" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\app.info" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\boot.config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\globalgamemanagers" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\globalgamemanagers.assets" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\globalgamemanagers.assets.resS" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\level0" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Assembly-CSharp.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Mono.Security.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\mscorlib.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\netstandard.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Newtonsoft.Json.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.ComponentModel.Composition.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Configuration.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Core.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Data.DataSetExtensions.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Data.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Drawing.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.EnterpriseServices.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.IO.Compression.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.IO.Compression.FileSystem.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Net.Http.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Numerics.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Runtime.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Runtime.Serialization.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Security.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.ServiceModel.Internals.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Transactions.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Xml.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Xml.Linq.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.Mdb.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.Pdb.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.Rocks.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Unsafe.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Mathematics.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Analytics.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Configuration.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Device.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Environments.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Environments.Internal.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Internal.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Networking.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Registration.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Scheduler.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Telemetry.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Threading.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.TextMeshPro.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Timeline.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.Antlr3.Runtime.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.Core.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.Flow.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.State.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AccessibilityModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AIModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AndroidJNIModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AnimationModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ARModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AssetBundleModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AudioModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ClothModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ClusterInputModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ClusterRendererModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.CoreModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.CrashReportingModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.DirectorModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.DSPGraphModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.GameCenterModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.GIModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.GridModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.HotReloadModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ImageConversionModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.IMGUIModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.InputLegacyModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.InputModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.JSONSerializeModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.LocalizationModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.NVIDIAModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ParticleSystemModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.PerformanceReportingModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.Physics2DModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.PhysicsModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ProfilerModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ScreenCaptureModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SharedInternalsModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SpatialTracking.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SpriteMaskModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SpriteShapeModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.StreamingModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SubstanceModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SubsystemsModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TerrainModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TerrainPhysicsModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TextRenderingModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TilemapModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TLSModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UI.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UIElementsModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UIElementsNativeModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UIModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UmbraModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UNETModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityAnalyticsModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityConnectModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityCurlModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityTestProtocolModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VehiclesModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VFXModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VideoModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VirtualTexturingModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VRModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.WindModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.XRModule.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Plugins\x86_64\lib_burst_generated.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\resources.assets" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\resources.assets.resS" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Resources\unity default resources" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Resources\unity_builtin_extra" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\RuntimeInitializeOnLoads.json" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\ScriptingAssemblies.json" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\sharedassets0.assets" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\sharedassets0.assets.resS" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\StreamingAssets\UnityServicesProjectConfiguration.json" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\machine.config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\settings.map" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\web.config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\machine.config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\settings.map" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\web.config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\machine.config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\settings.map" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\web.config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\browscap.ini" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\config" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\mconfig\config.xml" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\UnityCrashHandler64.exe" />
+    <None Remove="UnityResource\ZRun_LINE_QUE_URP\UnityPlayer.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_BurstDebugInformation_DoNotShip\Data\Plugins\x86_64\lib_burst_generated.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\app.info">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\boot.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\globalgamemanagers">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\globalgamemanagers.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\globalgamemanagers.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\level0">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Assembly-CSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Mono.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\mscorlib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\netstandard.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.ComponentModel.Composition.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Configuration.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Data.DataSetExtensions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Drawing.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.EnterpriseServices.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.IO.Compression.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.IO.Compression.FileSystem.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Net.Http.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Numerics.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Runtime.Serialization.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.ServiceModel.Internals.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Transactions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Xml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\System.Xml.Linq.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.Mdb.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.Pdb.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Cecil.Rocks.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Burst.Unsafe.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Mathematics.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Analytics.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Configuration.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Device.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Environments.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Environments.Internal.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Internal.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Networking.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Registration.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Scheduler.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Telemetry.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Services.Core.Threading.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.TextMeshPro.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.Timeline.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.Antlr3.Runtime.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.Flow.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\Unity.VisualScripting.State.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AccessibilityModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AndroidJNIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AnimationModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ARModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AssetBundleModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.AudioModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ClothModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ClusterInputModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ClusterRendererModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.CoreModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.CrashReportingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.DirectorModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.DSPGraphModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.GameCenterModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.GIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.GridModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.HotReloadModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ImageConversionModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.IMGUIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.InputLegacyModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.InputModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.JSONSerializeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.LocalizationModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.NVIDIAModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ParticleSystemModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.PerformanceReportingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.Physics2DModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.PhysicsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ProfilerModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.ScreenCaptureModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SharedInternalsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SpatialTracking.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SpriteMaskModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SpriteShapeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.StreamingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SubstanceModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.SubsystemsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TerrainModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TerrainPhysicsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TextRenderingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TilemapModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.TLSModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UIElementsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UIElementsNativeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UmbraModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UNETModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityAnalyticsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityConnectModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityCurlModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityTestProtocolModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VehiclesModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VFXModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VideoModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VirtualTexturingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.VRModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.WindModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Managed\UnityEngine.XRModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Plugins\x86_64\lib_burst_generated.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\resources.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\resources.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Resources\unity default resources">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\Resources\unity_builtin_extra">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\RuntimeInitializeOnLoads.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\ScriptingAssemblies.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\sharedassets0.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\sharedassets0.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\LINE_QUE_Data\StreamingAssets\UnityServicesProjectConfiguration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\2.0\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.0\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\4.5\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\browscap.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\MonoBleedingEdge\etc\mono\mconfig\config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\UnityCrashHandler64.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UnityResource\ZRun_LINE_QUE_URP\UnityPlayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
